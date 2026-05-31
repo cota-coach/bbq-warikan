@@ -372,7 +372,7 @@
 
     .result-hero {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
       gap: 10px;
       margin-bottom: 14px;
     }
@@ -394,7 +394,9 @@
     .metric strong {
       display: block;
       margin-top: 4px;
-      font-size: clamp(18px, 3vw, 28px);
+      font-size: clamp(22px, 2.1vw, 30px);
+      line-height: 1.15;
+      word-break: keep-all;
     }
 
     .diff.plus strong {
@@ -406,6 +408,7 @@
     }
 
     table {
+      display: none;
       width: 100%;
       border-collapse: collapse;
       overflow: hidden;
@@ -414,7 +417,7 @@
     }
 
     .result-cards {
-      display: none;
+      display: grid;
       gap: 10px;
     }
 
@@ -432,6 +435,7 @@
       justify-content: space-between;
       gap: 10px;
       align-items: baseline;
+      flex-wrap: wrap;
     }
 
     .result-card-title {
@@ -458,6 +462,8 @@
       display: block;
       color: var(--ink);
       font-size: 15px;
+      line-height: 1.35;
+      overflow-wrap: anywhere;
     }
 
     th, td {
@@ -578,10 +584,6 @@
 
       table {
         display: none;
-      }
-
-      .result-cards {
-        display: grid;
       }
     }
   </style>

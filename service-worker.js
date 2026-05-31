@@ -1,4 +1,4 @@
-const CACHE_NAME = "bbq-calculator-v2";
+const CACHE_NAME = "bbq-calculator-v3";
 const ASSETS = [
   "./",
   "./index.html",
