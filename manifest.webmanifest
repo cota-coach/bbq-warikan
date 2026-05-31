@@ -1,0 +1,18 @@
+{
+  "name": "BBQ割り勘電卓",
+  "short_name": "BBQ割り勘",
+  "description": "BBQやイベントの重み付き割り勘を、参加者メモから計算できる電卓です。",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#eaf8ff",
+  "theme_color": "#f26b3a",
+  "icons": [
+    {
+      "src": "assets/app-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
